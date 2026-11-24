@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>shortuploader — publish gameplay shorts to TikTok and YouTube</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><div class="wrap">
+<a class="brand" href="./"><svg width="52" height="52" viewBox="0 0 64 64" aria-hidden="true"><defs><linearGradient id="g" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#f7741f"/><stop offset="1" stop-color="#ffc23a"/></linearGradient></defs><rect x="2" y="2" width="60" height="60" rx="16" fill="url(#g)"/><polygon points="14,20 33,24 27,34" fill="#e3e8ee"/><polygon points="10,23 22,23 27,34" fill="#c3ccd6"/><polygon points="33,24 41,34 27,34" fill="#ffffff"/><polygon points="41,34 47,27 52,27 44,31" fill="#c9d1da"/><polygon points="49,25 54,30 47,30" fill="#ffffff"/><polygon points="27,34 41,34 31,42" fill="#e3e8ee"/><polygon points="27,34 31,42 21,54" fill="#ffffff"/></svg><b>shortuploader</b></a>
+<h1>Publish your gameplay shorts to TikTok and YouTube</h1>
+<p class="lede">shortuploader is a free Windows desktop app for gaming creators. Pick your own short videos, write the title, description and hashtags once, and publish them to your TikTok account and YouTube channel using the official TikTok and Google APIs.</p>
+</div></header>
+<nav aria-label="Site"><div class="wrap">
+<a href="./" aria-current="page">About</a>
+<a href="terms.html">Terms of Service</a>
+<a href="privacy.html">Privacy Policy</a>
+<a href="https://github.com/demetrius1313/shortuploader/issues">Contact</a>
+</div></nav>
+<main class="wrap">
+<section>
+<h2>What it does</h2>
+<ul>
+<li><strong>Sign in with TikTok and Google.</strong> Sign-in happens on the official TikTok and Google pages in your web browser (OAuth). The app never sees your password.</li>
+<li><strong>Prepare a post.</strong> Preview the video, choose a cover frame, enter a title, description and hashtags, choose a YouTube playlist, category and visibility.</li>
+<li><strong>Post to TikTok (Content Posting API).</strong> Before every post the app loads your current TikTok creator settings, shows which account will receive the video, lets you choose who can see it (there is no default), lets you turn on comments, Duet and Stitch (all off by default), offers the commercial content disclosure, and shows TikTok's Music Usage Confirmation. The video is uploaded only after you press Publish, and the app shows the publishing status.</li>
+<li><strong>Send to TikTok drafts.</strong> Instead of posting directly you can send a video to your TikTok inbox and finish editing and posting it in the TikTok app.</li>
+<li><strong>Post to YouTube (YouTube Data API).</strong> Upload as a Short, add it to a playlist and set a thumbnail.</li>
+<li><strong>Your own Twitch streams.</strong> Download recordings of your own Twitch broadcasts (for example streams from PlayStation 5) or a part of them, to cut them into shorts.</li>
+</ul>
+</section>
+<section>
+<h2>How the TikTok integration works</h2>
+<table>
+<tr><th>TikTok product / scope</th><th>Used for</th></tr>
+<tr><td>Login Kit — <code>user.info.basic</code></td><td>Signing in and showing the creator's display name and avatar in the app.</td></tr>
+<tr><td>Content Posting API — <code>video.publish</code></td><td>Direct Post of the video the creator selected, with the privacy level and interaction settings the creator chose.</td></tr>
+<tr><td>Content Posting API — <code>video.upload</code></td><td>"Send to TikTok drafts": the video is uploaded to the creator's TikTok inbox to be finished in the TikTok app.</td></tr>
+</table>
+<p>The app does not add watermarks or promotional branding to videos and does not post anything without the creator's explicit action.</p>
+</section>
+<section>
+<h2>Platform and privacy</h2>
+<p>shortuploader runs entirely on your Windows 10/11 computer. It has no server, no analytics and no ads. Sign-in tokens are stored only on your computer, encrypted with Windows DPAPI. Read the <a href="privacy.html">Privacy Policy</a> and <a href="terms.html">Terms of Service</a>.</p>
+</section>
+<section>
+<h2>Developer and contact</h2>
+<p>shortuploader is developed by Demi Eisen, a music artist and gaming creator based in Tbilisi, Georgia. For questions, support or data requests please open an issue at <a href="https://github.com/demetrius1313/shortuploader/issues">github.com/demetrius1313/shortuploader/issues</a>.</p>
+</section>
+</main>
+<footer><div class="wrap">© 2026 Demi Eisen · shortuploader · Contact: <a href="https://github.com/demetrius1313/shortuploader/issues">github.com/demetrius1313/shortuploader/issues</a></div></footer>
+</body>
+</html>
